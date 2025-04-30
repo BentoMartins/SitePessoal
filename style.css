@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefefe;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .hero {
+    background: linear-gradient(135deg, #002233, #005577);
+    color: white;
+    padding: 4rem 1rem;
+  }
+  
+  .hero .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .text-box {
+    max-width: 600px;
+  }
+  
+  .photo-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url('sua-foto.jpg'); /* substitua aqui */
+    background-size: cover;
+    background-position: center;
+    border: 4px solid white;
+    margin-top: 1rem;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #00334d;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #00ccff;
+  }
+  
+  main {
+    padding: 3rem 1rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #00334d;
+    margin-bottom: 1rem;
+    border-left: 5px solid #00ccff;
+    padding-left: 1rem;
+  }
+  
+  ul {
+    padding-left: 2rem;
+  }
+  
+  footer {
+    background-color: #002233;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .hero .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .photo-circle {
+      margin-top: 2rem;
+    }
+  }
+  #certificados a {
+    color: #00334d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #certificados a:hover {
+    color: #00ccff;
+    text-decoration: underline;
+  }
+  .photo-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

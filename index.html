@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Site Pessoal</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="container">
-            <div class="text-box" data-aos="fade-right">
+    <header class="navbar">
+        <div class="header">
+            <div class="caixaTexto">
                 <h1>Olá, meu nome é Bento Martins.</h1>
                 <p>Seja bem-vindo ao meu site, onde você encontrará um pouco sobre mim, minhas experiências profissionais, formações acadêmicas e certificações!</p>
             </div>
-            <div class="photo-circle" data-aos="fade-left">
-                <img src="img/Foto.jpg" alt="Foto de Perfil de Bento Martins" />
+            <div class="fotoPerfil">
+                <img src="img/fotoPerfil.jpg" alt="Foto de Perfil" />
             </div>
         </div>
     </header>
 
-    <nav class="navbar">
+    <nav class="linksComunicacao">
         <a href="https://www.linkedin.com/in/bento-martins-0a3b98169/" target="_blank">
             <i class="fab fa-linkedin"></i> LinkedIn
         </a>
@@ -31,85 +30,293 @@
         <a href="mailto:bento.martins99@gmail.com">
             <i class="fas fa-envelope"></i> bento.martins99@gmail.com
         </a>
-        <a href="tele:+5554999981603">
+        <a href="https://web.whatsapp.com/5554999981603" target="_blank">
             <i class="fas fa-phone"></i> (54) 99998-1603
         </a>
     </nav>
 
     <main>
-        <section class="custom-card" id="resumo" data-aos="fade-up">
+        <section class="biografia" id="resumo">
             <h2>Sobre mim</h2>
             <p>Prazer, me chamo Bento Martins, moro e sou natural de Passo Fundo, RS e tenho 23 anos. Atualmente sou estudante de Ciência da Computação na
-                Atitus Educação, apaixonado por tecnologia e em constante busca por novas oportunidades de aprendizado e
-                desenvolvimento profissional.</p>
-            <p>Sou uma pessoa com grande vontade de aprender e aprimorar meus conhecimentos. Tenho particular interesse
-                por desenvolvimento web e me dedico ao estudo de linguagens como Java, CSS, HTML e JavaScript.</p>
+                Atitus Educação, e trabalho como estigário TI na Rede de Farmácias São João. Sou apaixonado por tecnologia e em constante busca por novas oportunidades de aprendizado e
+                desenvolvimento profissional. Sou uma pessoa com grande vontade de aprender e aprimorar meus conhecimentos.</p>
+
         </section>
 
-        <section id="experiencias" data-aos="fade-up">
+        <section id="experiencias">
             <h2>Experiências Profissionais</h2>
             <ul>
-                <li><strong>DAER - Passo Fundo</strong> – Auxiliar de Laboratório (2023 - 2025)</li>
+                <strong>DAER - Passo Fundo</strong> – Auxiliar de Laboratório (2023 - 2025)</li>
             </ul>
             <p>• Organização e arquivamento de documentos, garantindo a facilidade de acesso.</p>
             <p>• Organização de documentos físicos e eletrônicos, mantendo registros atualizados.</p>
             <p>• Acompanhamento de processos internos e externos, garantindo o cumprimento de prazos.</p>
             <p>• Atualização de bases de dados e sistemas com informações recentes.</p>
             <p>• Conferência e verificação de dados em relatórios e planilhas.</p>
+            
+            <ul class="experiencia-separada">
+                <strong>Farmácias São João</strong> – Estágio - Projetos e Desenvolvimento (2025 - Atualmente)</li>
+            </ul>
+            <p>• Apoio em projetos de tecnologia da informação, colaborando com equipes de desenvolvimento e análise.</p>
+            <p>• Suporte na documentação de requisitos, fluxos e processos de sistemas.</p>
+            <p>• Apoio na identificação de melhorias em processos e rotinas operacionais de TI.</p>
+            <p>• Participação ativa na realização e execução de projetos de TI, apoiando desde o planejamento até a entrega.</p>
+            <p>• Acompanhamento do cronograma de projetos, auxiliando no cumprimento de prazos e metas.</p>
+
         </section>
 
-        <section id="formacao" data-aos="fade-up">
+        <section id="formacao">
             <h2>Formação Acadêmica</h2>
             <ul>
                 <li><strong>Escola Notre Dame Menino Jesus</strong> – Ensino Fundamental (2009 - 2017)</li>
                 <li><strong>Escola Notre Dame</strong> – Ensino Médio (2018 - 2020)</li>
-                <li><strong>Atitus Educação • Arquitetura e Urbanismo</strong> – Ensino Superior (2021 - 2022)</li>
+                <li><strong>Atitus Educação • Arquitetura e Urbanismo</strong> – Ensino Superior (2021 - 2022 (Incompleto))</li>
                 <li><strong>Atitus Educação • Ciência da Computação</strong> – Ensino Superior (2024 - 2027)</li>
             </ul>
         </section>
 
-        <section id="certificados" class="certificados" data-aos="fade-up">
+        <section id="certificados" class="certificados">
             <h2>Certificados</h2>
-            <ul>
-                <li>
-                    <p><strong>AWS Academy Graduate</strong> - AWS Academy Introduction to Cloud Semester 1</p>
-                    <a href="https://www.credly.com/badges/fc75073b-9a57-48fd-bc3d-3d8f900e0b6e/print" target="_blank">
-                        <img src="img/AWS.png" alt="Certificado AWS" /> 
-                    </a>
-                </li>
-                <li>
-                    <p><strong>Desenvolvimento de Aplicações Júnior</strong> - Atitus Educação</p>
-                    <a href="https://www.linkedin.com/in/bento-martins-0a3b98169/details/certifications/1744417140010/" target="_blank">
-                        <img src="img/Certjr.png" alt="Certificado Júnior" />
-                    </a>
-                </li>
-                <li>
-                    <p><strong>Arquitetura de Soluções em Cloud</strong> - Atitus Educação</p>
-                    <a href="https://www.linkedin.com/in/bento-martins-0a3b98169/details/certifications/1744417218373/" target="_blank">
-                        <img src="img/Certcloud.png" alt="Certificado Cloud" />
-                    </a>
-                </li>
-            </ul>
-        </section>
+            
+            <!-- Filtro de Categorias -->
+            <div class="filtro-certificados">
+                <button class="filtro-btn active" data-categoria="java">Java</button>
+                <button class="filtro-btn" data-categoria="ia">Inteligência Artificial</button>
+                <button class="filtro-btn" data-categoria="ux-ui">UX/UI Design</button>
+                <button class="filtro-btn" data-categoria="cloud">Cloud/AWS</button>
+                <button class="filtro-btn" data-categoria="banco-dados">Banco de Dados</button>
+                <button class="filtro-btn" data-categoria="atitus">ATITUS</button>
+            </div>
 
-        <section id="habilidades" data-aos="fade-up">
-            <h2>Habilidades</h2>
-            <div class="skills-container">
-                <div class="skill"><img src="img/javalogo.png" alt="Java"><p>Java</p></div>
-                <div class="skill"><img src="img/javascriptlogo.png" alt="JavaScript"><p>JavaScript</p></div>
-                <div class="skill"><img src="img/pslogo.png" alt="Photoshop"><p>Photoshop</p></div>
-                <div class="skill"><img src="img/htmllogo.png" alt="HTML"><p>HTML</p></div>
-                <div class="skill"><img src="img/csslogo.png" alt="CSS"><p>CSS</p></div>
-                <div class="skill"><img src="img/pythonlogo.webp" alt="Python"><p>Python</p></div>
+            <ul class="lista-certificados">
+
+                <li class="certificado-item mostrar-inicial" data-categoria="java">
+                    <p><strong>Praticando Java:</strong> variáveis e tipos</p>
+                    <a href="certificados/PJVariaveisTipos.png" class="certificado-link" data-imagem="certificados/PJVariaveisTipos.png">
+                        <img src="certificados/PJVariaveisTipos.png" alt="Praticando Java: variáveis e tipos" />
+                    </a>
+                </li>
+                <li class="certificado-item mostrar-inicial" data-categoria="java">
+                    <p><strong>Praticando Java: </strong>condicionais if e else</p>
+                    <a href="certificados/PJIFeELSE.png" class="certificado-link" data-imagem="certificados/PJIFeELSE.png">
+                        <img src="certificados/PJIFeELSE.png" alt="Praticando Java: condicionais if e else" />
+                    </a>
+                </li>
+                <li class="certificado-item mostrar-inicial" data-categoria="java">
+                    <p><strong>Praticando Java:</strong> laços for e while</p>
+                    <a href="certificados/PJFOReWHILE.png" class="certificado-link" data-imagem="certificados/PJFOReWHILE.png">
+                        <img src="certificados/PJFOReWHILE.png" alt="Praticando Java: laços for e while" />
+                    </a>
+                </li>
+                <li class="certificado-item oculto-inicial" data-categoria="java">
+                    <p><strong>Praticando Java:</strong> Orientação a Objetos com classes, atributos e métodos</p>
+                    <a href="certificados/PJOrientacaoObjeto.png" class="certificado-link" data-imagem="certificados/PJOrientacaoObjeto.png">
+                        <img src="certificados/PJOrientacaoObjeto.png" alt="Praticando Java: Orientação a Objetos com classes, atributos e métodos" />
+                    </a>
+                </li>
+                <li class="certificado-item oculto-inicial" data-categoria="java">
+                    <p><strong>Praticando Java:</strong> herança, polimorfismo e interfaces</p>
+                    <a href="certificados/PJHeranca.png" class="certificado-link" data-imagem="certificados/PJHeranca.png">
+                        <img src="certificados/PJHeranca.png" alt="Praticando Java: herança, polimorfismo e interfaces" />
+                    </a>
+                </li>
+                <li class="certificado-item oculto-inicial" data-categoria="java">
+                    <p><strong>Praticando Java:</strong> encapsulamento</p>
+                    <a href="certificados/PJEncapsulamento.png" class="certificado-link" data-imagem="certificados/PJEncapsulamento.png">
+                        <img src="certificados/PJEncapsulamento.png" alt="Praticando Java: encapsulamento" />
+                    </a>
+                </li>
+                <li class="certificado-item oculto-inicial" data-categoria="java">
+                    <p><strong>Praticando Java:</strong>  Strings e Regex</p>
+                    <a href="certificados/PJSTRINGSeREGEX.png" class="certificado-link" data-imagem="certificados/PJSTRINGSeREGEX.png">
+                        <img src="certificados/PJSTRINGSeREGEX.png" alt="Praticando Java: Strings e Regex" />
+                    </a>
+                </li>
+                <li class="certificado-item oculto-inicial" data-categoria="java">
+                    <p><strong>Praticando Java:</strong> data e hora</p>
+                    <a href="certificados/PJDataEHora.png" class="certificado-link" data-imagem="certificados/PJDataEHora.png">
+                        <img src="certificados/PJDataEHora.png" alt="Praticando Java: data e hora" />
+                    </a>
+                </li>
+                <li class="certificado-item oculto-inicial" data-categoria="java">
+                    <p><strong>Praticando Java:</strong> coleções e streams</p>
+                    <a href="certificados/PJColecaoEStreams.png" class="certificado-link" data-imagem="certificados/PJColecaoEStreams.png">
+                        <img src="certificados/PJColecaoEStreams.png" alt="Praticando Java: coleções e streams" />
+                    </a>
+                </li>
+                <li class="certificado-item oculto-inicial" data-categoria="java">
+                    <p><strong>Formação:</strong> Praticando Java</p>
+                    <a href="certificados/praticandoJava.png" class="certificado-link" data-imagem="certificados/praticandoJava.png">
+                        <img src="certificados/praticandoJava.png" alt="Formação Praticando Java" />
+                    </a>
+                </li>
+                <li class="certificado-item oculto-inicial" data-categoria="java">
+                    <p><strong>Java:</strong> criando a sua primeira aplicação</p>
+                    <a href="certificados/primeiraAplicacaoJava.png" class="certificado-link" data-imagem="certificados/primeiraAplicacaoJava.png">
+                        <img src="certificados/primeiraAplicacaoJava.png" alt="Java: criando a sua primeira aplicação" />
+                    </a>
+                </li>
+
+                <!-- Certificados Inteligência Artificial -->
+
+                <li class="certificado-item mostrar-inicial" data-categoria="ia">
+                    <p><strong>Aprendizagem:</strong> personalizando sua rotina de estudos com ChatGPT</p>
+                    <a href="certificados/aprendizagemGPT.png" class="certificado-link" data-imagem="certificados/aprendizagemGPT.png">
+                        <img src="certificados/aprendizagemGPT.png" alt="Aprendizagem: personalizando sua rotina de estudos com ChatGPT" />
+                    </a>
+                </li>
+                <li class="certificado-item mostrar-inicial" data-categoria="ia">
+                    <p><strong>Formação:</strong> Começando em Inteligência Artificial</p>
+                    <a href="certificados/comecandoIA.png" class="certificado-link" data-imagem="certificados/comecandoIA.png">
+                        <img src="certificados/comecandoIA.png" alt="Fomração Começando em Inteligência Artificial" />
+                    </a>
+                </li>
+                <li class="certificado-item mostrar-inicial" data-categoria="ia">
+                    <p><strong>ChatGPT:</strong> desvendando a IA em conversas e suas aplicações</p>
+                    <a href="certificados/desvendandoIA.png" class="certificado-link" data-imagem="certificados/desvendandoIA.png">
+                        <img src="certificados/desvendandoIA.png" alt="ChatGPT: desvendando a IA em conversas e suas aplicações" />
+                    </a>
+                </li>
+                <li class="certificado-item oculto-inicial" data-categoria="ia">
+                    <p><strong>Engenharia de Prompt:</strong> criando prompts eficazes para IA Generativa</p>
+                    <a href="certificados/engenhariaPrompt.png" class="certificado-link" data-imagem="certificados/engenhariaPrompt.png">
+                        <img src="certificados/engenhariaPrompt.png" alt="Engenharia de Prompt: criando prompts eficazes para IA Generativa" />
+                    </a>
+                </li>
+                <li class="certificado-item oculto-inicial" data-categoria="ia">
+                    <p><strong>ChatGPT:</strong> otimizando a qualidade dos resultados</p>
+                    <a href="certificados/otimizandoGPT.png" class="certificado-link" data-imagem="certificados/otimizandoGPT.png">
+                        <img src="certificados/otimizandoGPT.png" alt="ChatGPT: otimizando a qualidade dos resultados" />
+                    </a>
+                </li>
+                <li class="certificado-item oculto-inicial" data-categoria="ia">
+                    <p><strong>IA:</strong> explorando o potencial da inteligência artificial generativa</p>
+                    <a href="certificados/potencialIA.png" class="certificado-link" data-imagem="certificados/potencialIA.png">
+                        <img src="certificados/potencialIA.png" alt="IA: explorando o potencial da inteligência artificial generativa" />
+                    </a>
+                </li>
+
+                <!-- Certificados UX/UI Design -->
+
+                <li class="certificado-item mostrar-inicial" data-categoria="ux-ui">
+                    <p><strong>UX Design:</strong> entenda a área da User Experience</p>
+                    <a href="certificados/UXDesignUserExperience.png" class="certificado-link" data-imagem="certificados/UXDesignUserExperience.png">
+                        <img src="certificados/UXDesignUserExperience.png" alt="UX Design: entenda a área da User Experience" />
+                    </a>
+                </li>
+                <li class="certificado-item mostrar-inicial" data-categoria="ux-ui">
+                    <p><strong>UX Design:</strong> como construir uma persona</p>
+                    <a href="certificados/UXDesignPersona.png" class="certificado-link" data-imagem="certificados/UXDesignPersona.png">
+                        <img src="certificados/UXDesignPersona.png" alt="UX Design: como construir uma persona" />
+                    </a>
+                </li>
+                <li class="certificado-item mostrar-inicial" data-categoria="ux-ui">
+                    <p><strong>UX Design:</strong> criando um portfólio em UX</p>
+                    <a href="certificados/UXDesignPortfolio.png" class="certificado-link" data-imagem="certificados/UXDesignPortfolio.png">
+                        <img src="certificados/UXDesignPortfolio.png" alt="UX Design: criando um portfólio em UX" />
+                    </a>
+                </li>
+                <li class="certificado-item oculto-inicial" data-categoria="ux-ui">
+                    <p><strong>UX Design:</strong> concepção do produto pós-pesquisa</p>
+                    <a href="certificados/UXDesignPosPesquisa.png" class="certificado-link" data-imagem="certificados/UXDesignPosPesquisa.png">
+                        <img src="certificados/UXDesignPosPesquisa.png" alt="UX Design: concepção do produto pós-pesquisa" />
+                    </a>
+                </li>
+                <li class="certificado-item oculto-inicial" data-categoria="ux-ui">
+                    <p><strong>UX Design:</strong> elaborando projetos estratégicos</p>
+                    <a href="certificados/UXDesignProjetos.png" class="certificado-link" data-imagem="certificados/UXDesignProjetos.png">
+                        <img src="certificados/UXDesignProjetos.png" alt="UX Design: elaborando projetos estratégicos" />
+                    </a>
+                </li>
+                <li class="certificado-item oculto-inicial" data-categoria="ux-ui">
+                    <p><strong>UI para devs:</strong> construindo interfaces animadas</p>
+                    <a href="certificados/uiParaDevs.png" class="certificado-link" data-imagem="certificados/uiParaDevs.png">
+                        <img src="certificados/uiParaDevs.png" alt="UI para devs: construindo interfaces animadas" />
+                    </a>
+                </li>
+
+                <!-- Certificados Cloud/AWS -->
+                <li class="certificado-item mostrar-inicial" data-categoria="cloud">
+                    <p><strong>AWS Academy Graduate</strong> - Introduction to Cloud Semester 1 - Training Badge - AWS Academy Introduction to Cloud Semester 1</p>
+                    <a href="https://www.credly.com/badges/fc75073b-9a57-48fd-bc3d-3d8f900e0b6e/print" target="_blank">
+                        <img src="certificados/AWSAcademyGraduate.png" alt="AWS Academy Graduate - Introduction to Cloud Semester 1 - Training Badge" />
+                    </a>
+                </li>
+
+                <!-- Certificados ATITUS -->
+                <li class="certificado-item mostrar-inicial" data-categoria="atitus">
+                    <p><strong>Atitus Educação -</strong> Qualificação em Desenvolvimento de Aplicações Júnior</p>
+                    <a href="certificados/certificadoIA.jpeg" class="certificado-link" data-imagem="certificados/certificadoIA.jpeg">
+                        <img src="certificados/certificadoIA.jpeg" alt="Qualificação em Desenvolvimento de Aplicações Júnior" />
+                    </a>
+                </li>
+                <li class="certificado-item mostrar-inicial" data-categoria="atitus">
+                    <p><strong>Atitus Educação -</strong> Qualificação em Desenvolvimento de Soluções Full Stack</p>
+                    <a href="certificados/certificadoFullStack.jpeg" class="certificado-link" data-imagem="certificados/certificadoFullStack.jpeg">
+                        <img src="certificados/certificadoFullStack.jpeg" alt="Qualificação em Desenvolvimento de Soluções Full Stack" />
+                    </a>
+                </li>
+                <li class="certificado-item mostrar-inicial" data-categoria="atitus">
+                    <p><strong>Atitus Educação -</strong> Qualificação em Arquitetura de Soluções em Cloud</p>
+                    <a href="certificados/certificadoCyberSecurity.jpeg" class="certificado-link" data-imagem="certificados/certificadoCyberSecurity.jpeg">
+                        <img src="certificados/certificadoCyberSecurity.jpeg" alt="Qualificação em Arquitetura de Soluções em Cloud" />
+                    </a>
+                </li>
+
+                <!-- Certificados Banco de Dados -->
+                <li class="certificado-item mostrar-inicial" data-categoria="banco-dados ia">
+                    <p><strong>MySQL com IA:</strong> criando o Banco de Dados</p>
+                    <a href="certificados/MYSQLcomIA.png" class="certificado-link" data-imagem="certificados/MYSQLcomIA.png">
+                        <img src="certificados/MYSQLcomIA.png" alt="MySQL com IA: criando o Banco de Dados" />
+                    </a>
+                </li>
+
+            </ul>
+            
+            <!-- Botão Ver Mais -->
+            <div class="ver-mais-container">
+                <button class="ver-mais-btn" id="verMaisBtn">
+                    <span class="ver-mais-texto">Ver mais</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
             </div>
         </section>
 
-        <section id="projetos" data-aos="fade-up">
+        <section id="habilidades">
+            <h2>Hard Skills</h2>
+            <div class="skills-container">
+                <div class="skill"><img src="hardSkills/javaIcon.png" alt="Java"><p>Java</p></div>
+                <div class="skill"><img src="hardSkills/javaScriptIcon.png" alt="JavaScript"><p>JavaScript</p></div>
+                <div class="skill"><img src="hardSkills/psIcon.png" alt="Photoshop"><p>Photoshop</p></div>
+                <div class="skill"><img src="hardSkills/htmlIcon.png" alt="HTML"><p>HTML</p></div>
+                <div class="skill"><img src="hardSkills/cssIcon.png" alt="CSS"><p>CSS</p></div>
+                <div class="skill"><img src="hardSkills/pythonIcon.webp" alt="Python"><p>Python</p></div>
+                <div class="skill"><img src="hardSkills/reactNativeIcon.png" alt="ReactNative"><p>ReactNative</p></div>
+                <div class="skill"><img src="hardSkills/figmaIcon.webp" alt="Figma"><p>Figma</p></div>
+                <div class="skill"><img src="hardSkills/htmxIcon.png" alt="HTMX"><p>HTMX</p></div>
+                <div class="skill"><img src="hardSkills/postgreSQLICon.png" alt="PostgreSQL"><p>PostgreSQL</p></div>
+                <div class="skill"><img src="hardSkills/dockerIcon.png" alt="Docker"><p>Docker</p></div>
+            </div>
+        </section>
+
+        <section id="projetos">
             <h2>Projetos</h2>
-            <p><strong>Site de jogos</strong></p>
-            <p>Este é um site de jogos básico, sem opções de jogo ativas, desenvolvido como parte das atividades da aula de Front-End. Seu principal objetivo é servir como ferramenta de apoio ao processo de aprendizado, permitindo aos alunos praticarem a estruturação de páginas web, organização de conteúdo visual e aplicação de conceitos fundamentais de HTML e CSS.</p>
-            <a href="https://sitefrontendatitus.netlify.app" target="_blank">
-                <img src="img/companygames.png" alt="Projeto de Site de Jogos" class="projeto-img">
+            <p class="titulo-projeto"><strong>Swap Class</strong></p>
+            <p>Swap Class foi um projeto desenvolvido para a graduação em Ciência da Computação na ATITUS Educação. O trabalho foi realizado por mim e por mais dois colegas.
+                O Swap Class é um aplicativo voltado à venda e troca de itens usados, destinado exclusivamente a universitários de todo o Brasil, com o objetivo de facilitar a reutilização de produtos dentro do ambiente acadêmico.
+                O aplicativo mobile foi desenvolvido em JavaScript, utilizando React Native, enquanto o backend do sistema foi implementado em Java, com o framework Spring Boot, e o banco de dados utilizado foi o PostgreSQL.</p>
+            <a href="https://github.com/BentoMartins/SwapClass-ReactNative" target="_blank">
+                <img src="img/SwapClass.png" alt="Aplicativo de vendas de itens usados" class="projeto-img">
+            </a>
+            <p class="titulo-projeto"><strong>Happenize</strong></p>
+            <p>Happenize foi um projeto acadêmico desenvolvido para a graduação em Ciência da Computação na ATITUS Educação.
+                O Happenize é um aplicativo voltado à criação e participação em eventos, permitindo que qualquer pessoa organize ou participe de experiências diversas.
+                A plataforma oferece múltiplas categorias e estilos de eventos, possibilitando ao usuário tanto explorar nichos de seu interesse quanto sair da sua zona de conforto e experimentar algo novo.
+                O aplicativo foi desenvolvido exclusivamente no Figma, em nível de alta fidelidade, servindo como um protótipo conceitual.
+                No entanto, há a possibilidade de que, futuramente, o projeto evolua para uma implementação em código</p>
+            <a href="https://www.figma.com/design/1yUG1SzQJBhCLaaH71cJr6/Alta-Fidelidade-Happenize?node-id=0-1&t=G5BjkHhTfQDfwex3-1" target="_blank">
+                <img src="img/Happenize1.png" alt="Aplicativo de eventos" class="projeto-img">
             </a>
         </section>
     </main>
@@ -118,7 +325,15 @@
         <p>© 2025 Bento Martins. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
+    <div id="modalCertificado" class="modal-certificado">
+        <div class="modal-conteudo">
+            <button class="modal-fechar" id="fecharModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="imagemModal" src="" alt="Certificado" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -11,13 +11,13 @@ body {
   line-height: 1.6;
 }
 
-.hero {
+.navbar {
   background: linear-gradient(135deg, #002233, #005577);
   color: white;
   padding: 4rem 1rem;
 }
 
-.hero .container {
+.navbar .header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -26,11 +26,11 @@ body {
   margin: auto;
 }
 
-.text-box {
+.caixaTexto {
   max-width: 600px;
 }
 
-.photo-circle {
+.fotoPerfil {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -40,23 +40,23 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
-  background-image: url('img/Foto.jpg');
+  background-image: url('img/fotoPerfil.jpg');
   background-size: cover;
   background-position: center;
 }
 
-.photo-circle img {
+.fotoPerfil img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.photo-circle img:hover {
+.fotoPerfil img:hover {
   transform: scale(1.1);
 }
 
-.navbar {
+.linksComunicacao {
   background-color: #002f40;
   padding: 10px 20px;
   display: flex;
@@ -64,7 +64,7 @@ body {
   gap: 30px;
 }
 
-.navbar a {
+.linksComunicacao a {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -72,11 +72,11 @@ body {
   transition: color 0.3s ease;
 }
 
-.navbar a:hover {
+.linksComunicacao a:hover {
   color: #00bcd4;
 }
 
-.navbar i {
+.linksComunicacao i {
   margin-right: 8px;
 }
 
@@ -102,6 +102,10 @@ ul {
   padding-left: 2rem;
 }
 
+.experiencia-separada {
+  margin-top: 2rem;
+}
+
 footer {
   background-color: #002233;
   color: white;
@@ -121,13 +125,77 @@ footer {
   text-decoration: underline;
 }
 
+.filtro-certificados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 2rem;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.filtro-btn {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: 2px solid #00334d;
+  border-radius: 25px;
+  color: #00334d;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.filtro-btn:hover {
+  background-color: #00334d;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 51, 77, 0.3);
+}
+
+.filtro-btn.active {
+  background-color: #00334d;
+  color: white;
+  border-color: #00ccff;
+  box-shadow: 0 4px 12px rgba(0, 204, 255, 0.4);
+}
+
+.lista-certificados {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.certificado-item {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s ease, transform 0.3s ease, display 0.3s ease;
+  display: block;
+}
+
+.certificado-item.oculto-inicial {
+  display: none;
+}
+
+.certificado-item p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #00334d;
+  text-align: center;
+}
+
 .certificados img {
-  width: 35%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
   border-radius: 8px;
   display: block;
-  margin: 1rem 0;
+  margin: 0.5rem auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .certificados img:hover {
@@ -135,13 +203,111 @@ footer {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.skills-container {
+.ver-mais-container {
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
+}
+
+.ver-mais-btn {
+  padding: 12px 30px;
+  background-color: #00334d;
+  color: white;
+  border: 2px solid #00ccff;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ver-mais-btn:hover {
+  background-color: #00ccff;
+  color: #00334d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 204, 255, 0.4);
+}
+
+.ver-mais-btn.expandido i {
+  transform: rotate(180deg);
+}
+
+.ver-mais-btn i {
+  transition: transform 0.3s ease;
+}
+
+.modal-certificado {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-certificado.mostrar {
+  display: flex;
+}
+
+.modal-conteudo {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-conteudo img {
+  max-width: 100%;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.modal-fechar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: #00334d;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 1001;
+}
+
+.modal-fechar:hover {
+  background-color: #00ccff;
+  color: white;
+}
+
+.modal-fechar i {
+  font-size: 24px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 40px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
   padding: 20px 0;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-items: center;
 }
 
 .skill {
@@ -151,7 +317,6 @@ footer {
   min-width: 100px;
   text-align: center;
   font-family: Arial, sans-serif;
-  cursor: pointer;
 }
 
 .skill img {
@@ -174,6 +339,16 @@ footer {
   color: #000;
 }
 
+.titulo-projeto {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.titulo-projeto:first-of-type {
+  margin-top: 0;
+}
+
 .projeto-img {
   display: block;
   margin: 30px auto;
@@ -187,6 +362,12 @@ footer {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 1024px) {
+  .lista-certificados {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .hero .container {
     flex-direction: column;
@@ -196,5 +377,47 @@ footer {
 
   .photo-circle {
     margin-top: 2rem;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .filtro-certificados {
+    gap: 6px;
+    padding: 0.5rem 0;
+  }
+
+  .filtro-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .lista-certificados {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .certificados img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .modal-conteudo {
+    max-width: 95%;
+    padding: 0 10px;
+  }
+
+  .modal-fechar {
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  .modal-conteudo img {
+    max-height: 85vh;
   }
 }
